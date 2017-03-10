@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pila_ej.FXMLDocumentController">
+   <children>
+      <WebView fx:id="web" layoutX="21.0" layoutY="61.0" prefHeight="210.0" prefWidth="373.0" />
+      <MenuBar layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Operaciones Primarias">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleButtonAction" text="Apilar" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtonAction2" text="Desapilar" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtonAction5" text="Clonar" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtonAction6" text="Invertir" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Operaciones Secundarias">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#colar" text="Colar" />
+                  <MenuItem mnemonicParsing="false" onAction="#desencolar" text="Desencolar" />
+                  <MenuItem mnemonicParsing="false" onAction="#clonar" text="Clonar" />
+                  <MenuItem mnemonicParsing="false" onAction="#invertir" text="Invertir" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#modificar" text="info" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <WebView fx:id="webView2" layoutX="17.0" layoutY="285.0" prefHeight="222.0" prefWidth="381.0" />
+      <Label fx:id="bienvenido" layoutX="21.0" layoutY="538.0" text="bienvenido" />
+      <Label fx:id="label" layoutX="139.0" layoutY="538.0" />
+   </children>
+</AnchorPane>
